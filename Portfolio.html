@@ -1,0 +1,184 @@
+<html>
+<head>
+	<link rel="stylesheet" href="Portfolio.css">
+</head>
+<!--Direction based on screen ratio-->
+<body>
+	<header>
+		<svg viewBox="0 0 100 100" 
+			 xmlns="http://www.w3.org/2000/svg"
+			 preserveAspectRatio="xMidYMid slice"
+			 width="100%" height="100%">
+			<defs>
+				<radialGradient id="deepGrad"
+								cx="50%" cy="50%"
+								r="80%"
+								fx="50%" fy="100%"
+								fr="10%">
+					<stop offset="0%" stop-color="#081D17"/>
+					<stop offset="100%" stop-color="#123F33"/>
+				</radialGradient>
+			</defs>
+			<rect x="0" y="0"
+				  width="100"
+				  height="100"
+				  fill="url(#deepGrad)"/>
+		</svg>
+		<svg viewBox="0 0 100 100"
+			 preserveAspectRatio="xMidYMid meet"
+			 width="100%" height="100%">
+			<defs>
+				<path id="textCurv"
+					  d="M10,40 Q50,10 90,40"
+					  fill="none" stroke="red"/>
+				
+			</defs>
+			
+			<text font-size="13"
+				  text-anchor="middle"
+				  x="45">
+				<textPath href="#textCurv">Some Portfolio</textPath>
+			</text>
+			
+			<g id="someLines">
+				<path id="longest"
+					  d="M10,50 H90"
+					  stroke="#1D5969"/>
+				<path id="longer"
+					  d="M20,60 H80"
+					  stroke="#184B59"/>
+				<path id="shorter"
+					  d="M30,70 H70"
+					  stroke="#143F4A"/>
+				<path id="shortest"
+					  d="M40,80 H60"
+					  stroke="#10323B"/>
+			</g>
+		</svg>
+		<svg id="arrow"
+			 viewbox="0 0 10 10">
+			<defs>
+				<mask id="someMask">
+					<rect x="0" y="0"
+						  width="10"
+						  height="10"
+						  rx="3" ry="3"
+						  stroke="white"
+						  fill="black"/>
+					<path d="M3.5,2 V5 H2 L5,8 L8,5 H6.5 V2 Z"
+						  fill="white"/>
+				
+				</mask>
+				<linearGradient id="someGrad" x1="0" y1="0" x2="0" y2="100%">
+					<stop id="stop1"
+						  offset="0%" 
+						  stop-color="#0D2B33"/>
+					<stop id="stop2"
+						  offset="50%"
+						  stop-color="#32A6C5">
+					</stop>
+					<stop id="stop3" 
+						  offset="100%" 
+						  stop-color="#0D2B33"/>
+				</linearGradient>	
+			</defs>
+			<rect id="arrowThing"
+				  x="0" y="0"
+				  width="10" height="10"
+				  rx="3" ry="3"
+				  fill="url(#someGrad)"
+				  mask="url(#someMask)"/>
+		</svg>
+	</header>
+	<main>
+		<svg id="mainBack"
+			 viewBox="0 0 100 200"
+			 preserveAspectRatio="xMidYMin meet"
+			 width="100vw" height="100%">
+			<defs>
+				<mask id="ARGH">
+					<rect x="-5" y="-5"
+						  width="110"
+						  height="220"
+						  fill="white"/>
+					<text text-anchor="middle"
+						  x="50" y="20"
+						  textLength="90"
+						  fill="black"
+						  stroke="grey">This is Gorgeous</text>
+				
+				</mask>
+			</defs>
+			
+			<path
+				  d="M0,6 V200 H100 V6 Q50,-6 0,6"
+				  stroke="#0D2B33"
+				  fill="#0D2B33"
+				  mask="url(#ARGH)"/>
+			
+			<text text-anchor="middle"
+				  x="50" y="26"
+				  textLength="80">It is Appealing</text>
+			<text text-anchor="end"
+				  x="99" y="37"
+				  font-size="3">Good use of colors -></text>
+			<rect x=10 y="37"
+				  width="60" height="60"
+				  fill="white"/>
+			<text text-anchor="start"
+				  x="67" y="43"
+				  font-size="3"><- Good use of white space</text>
+			<text y="42"
+				  width="50" height="50"
+				  font-size="4"
+				  stroke-width=".1">
+				<tspan x="15" dy="1.2em" stroke="blue">My skills: </tspan>	
+				<tspan x="18" dy="1.2em" stroke="red"> -Incradible Stylist </tspan>	
+				<tspan x="18" dy="1.2em" stroke="yellow"> -Master front-end develloper </tspan>	
+				<tspan x="18" dy="1.2em" stroke="blue"> -Purfect spelings </tspan>	
+				<tspan x="18" dy="1.2em" stroke="green"> -Great sens of humor</tspan>	
+				<tspan x="18" dy="1.2em" stroke="red"> -So much more</tspan>	
+			</text>
+				
+			<g>
+				<rect x="30" y="107"
+					  width="60"
+					  height="60"/>	
+				
+				<text width="50"
+					  height="50"
+					  y="107"
+					  font-size="2"
+					  fill="white">
+					<tspan font-size="3" x="35" dy="1.2em">Project:</tspan>
+					<tspan x="38" dy="2em">I honestly do not have any projects so far at the exception </tspan>
+					<tspan x="38" dy="1.2em">of THIS. However, this assignment is a good idea which </tspan>
+					<tspan x="38" dy="1.2em">I will keep working on in the futur!</tspan>
+					<tspan x="38" dy="2em"> Sorry for submiting such a lame thing; it's the best I could </tspan>
+					<tspan x="38" dy="1.2em">come up with my level of skills</tspan>
+				</text>
+			</g>
+		</svg>
+		<div>
+			<p>Email to portfolio author: some_Email@domain.com</p>
+			
+		</div>
+	</main>
+</body>
+</html>
+<!--
+1) a page at https://your_username.github.io - 70%
+
+2) ----- an appealing structure (possibly from a template or framework) 5%
+
+3) ----- Good use of whitespace and color 5%
+
+4) Highlight your skills 10%
+
+5) Show your projects 10%
+
+6) ----- Have a means of contacting you 5%
+
+7) ----- Make your sight responsive 5%
+
+-->

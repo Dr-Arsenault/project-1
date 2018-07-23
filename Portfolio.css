@@ -1,0 +1,173 @@
+::-webkit-scrollbar{
+	display:none;
+}
+htlm{
+	position:relative;
+	margin: 0;
+	padding: 0;
+	
+	overflow-x: hidden;
+	overflow-y: scroll;
+	
+}
+body{
+	position:relative;
+	margin: 0;
+	padding: 0;
+}
+/*HEADER*/
+header{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	
+}
+header svg{
+	position: fixed;
+}
+
+header svg text{
+	fill:none;
+	stroke: #236B7E;
+	stroke-dasharray:0%;
+	animation: dasharray 4s linear 1.4s infinite;
+}
+@keyframes dasharray{
+	50%{
+		stroke-dasharray: 100%;
+		fill: #0000;
+	}
+	0%,100%{
+		stroke-dasharray: 0;
+		fill: #236B7E;
+	}
+}
+
+#someLines path{
+	stroke-dasharray: 0 100 0 ;
+}
+#longest{
+	animation: lineLongest .5s linear .9s forwards;
+}
+#longer{
+	animation: lineLonger .4s linear .5s forwards;
+}
+#shorter{
+	animation: lineShorter .3s linear .2s forwards;
+}
+#shortest{
+	animation: lineShortest .2s linear forwards;
+}
+@keyframes lineLongest{
+	0%{
+		stroke-dasharray:0 80 0 ;
+		
+	}
+	100%{
+		stroke-dasharray: 40 0 40 ;
+		
+	}
+}
+@keyframes lineLonger{
+	0%{
+		stroke-dasharray:0 60 0 ;
+		
+	}
+	100%{
+		stroke-dasharray: 30 0 30 ;
+		
+	}
+}
+@keyframes lineShorter{
+	0%{
+		stroke-dasharray:0 40 0 ;
+		
+	}
+	100%{
+		stroke-dasharray: 20 0 20 ;
+		
+	}
+}
+@keyframes lineShortest{
+	0%{
+		stroke-dasharray:0 20 0 ;
+		
+	}
+	100%{
+		stroke-dasharray: 10 0 10 ;
+		
+	}
+}
+
+#arrow{
+	position: absolute;
+	width: 10vmax;
+	height: 10vmax;
+	top: 90vh;
+	left: 50vw;
+	margin: -5vmax 0 0 -5vmax;
+}
+#someGrad{
+	x: -100;
+}
+
+/*HEADER*/
+/*MAIN*/
+
+main{
+	position: absolute;
+	width: 100vw;
+	height: 300vh;
+	top:100vh;
+	left: 0;
+	
+}
+#mainBack path{
+	stroke-dasharray: 0 1 2 3 4;
+	animation: strokingStrokes 2s linear infinite;
+}
+@keyframes strokingStrokes{
+	0%,100%{
+		stroke: red;
+		stroke-dasharray:0 1 2 3 4;
+	}
+	50%{
+		stroke: blue;
+		stroke-dasharray:4 3 2 1 0;
+	}
+}
+
+
+main div{
+	position:absolute;
+	width: 90vw;
+	height: 40vh;
+	bottom: 5vh;
+	left: 5vw;
+	background-color: #888c;
+}
+main div p{
+	display: block;
+	text-align: center;
+	width: 100%;
+	font-size: 5vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
